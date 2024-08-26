@@ -45,4 +45,4 @@ O Decodificador de Texto é uma iniciativa proposta pela Alura, com a finalidade
 
 ## Acesse o Projeto
 
-Você pode acessar o projeto em: colocar meu link
+Você pode acessar o projeto em: https://decodificador-de-texto-b.vercel.app/
