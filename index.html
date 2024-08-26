@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto - BG</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Jersey+10&family=Luckiest+Guy&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Jersey+10&display=swap');
+   </style> 
+</head>
+
+<body>
+    <div class="main-content">
+        <header>
+            <div class="titulo-container">
+                <div class="titulo-icones">
+                    <img src="./assets/cadeadofechado.png" alt="Cadeado fechado" class="titulo-icone">
+                    <img src="./assets/linha-icone.png" alt="Linha" class="titulo-icone">
+                    <img src="./assets/cadeadoaberto.png" alt="Cadeado aberto" class="titulo-icone">
+                </div>
+                <h1>Decodificador de Texto</h1>
+            </div>
+        </header>
+    
+        <main class="conteudo">
+            <section class="conteudo__entrada">
+                <input class="conteudo__caixa" type="text" id="input-texto" placeholder="Digite o texto que você deseja criptografar ou descriptografar." />
+                <div  class="alerta-container">
+                    <img src="./assets/alerta-icone.png" alt="Alerta" class="alerta-icone">
+                    <p class="alert">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="conteudo__botoes">
+                    <button onclick="criptografarTexto()">Codificar</button>
+                    <button onclick="descriptografarTexto()">Decodificar</button>
+                </div>
+            </section>
+            <div class="conteudo__saida-container">
+                <section class="conteudo__saida">
+                    <p class="conteudo__saida-texto">O texto codificado aparecerá aqui.</p>
+                </section>
+                <button id="copiar-btn" onclick="copiarTexto()">
+                    <img src="./assets/copiar-icone-branco.png" alt="Copiar" class="icone-copiar" id="copiar-icone">
+                </button>
+            </div>
+        </main>
+    </div>
+    
+
+    <footer>
+        <p>Desenvolvido por Ana Beatriz Gonçalves &copy; 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
